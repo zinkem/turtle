@@ -10,18 +10,18 @@ format.
 ## Files included in this archive
 ```
 Makefile        Makefile to build project
-README.md	      This file
+README.md       This file
 
 interpreter.c   Code to perform ll(1) parse of code
 
 scanner.c       Code to scan for next token, provided by Dr
 scanner.h       Wayne Cochran
 
-symtab.c	      Symbol table provided by Dr Wayne Cochran
+symtab.code     Symbol table provided by Dr Wayne Cochran
 symtab.h
 
-turtle.c	      Code to control the turtle for drawing,
-turtle.h	      provided by Dr Wayne Cochran
+turtle.c        Code to control the turtle for drawing,
+turtle.h        provided by Dr Wayne Cochran
 
 code/	          Sample .turtle files containing turtle code
 ```
@@ -62,16 +62,22 @@ The turtle can be commanded to do different things, the commands are listed
 below:
 
 `HOME`          -- moves the turtle to the origin, facing east
+
 `PENUP`	        -- tells the turtle to put it's 'pen' down, drawing where it moves 	 
+
 `PENDOWN`	      -- tells turtle to stop drawing
+
 `FORWARD expr`  -- move forward a distance specified by expr
+
 `LEFT expr`     -- rotate expr degrees left
+
 `RIGHT expr`    -- rotate expr degrees right
+
 `PUSHSTATE`     -- record the turtles current state, and save it on the stack
+
 `POPSTATE`      -- recall the top state on the stack
 
-
-Variables
+### Variables
 
 All variables are floats, initialized to 0.0 the first time
 they show up in code. They must begin with a letter and can contain
@@ -145,8 +151,7 @@ As long as the bool expression is true, this will repeatedly execute the code
 between DO and OD.
 
 
-Version Information
--------------------
+## Version Information
 
 Turtle Language Interpretter
 Version 1.0, released 2/10/11
