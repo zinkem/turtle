@@ -1,7 +1,5 @@
 # turtle
-
 A toy logo implementation for CS 355 at Washington State University
--------------------------------------------------------------------
 
 # Introduction
 
