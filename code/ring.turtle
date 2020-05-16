@@ -1,0 +1,32 @@
+#
+# Ring of stars
+#
+
+RAD := 10  # ring radius
+N := 9     # num stars
+L := 10    # "width" of star
+
+DTHETA := 360 / N    # angle between stars
+THETA := 0           # initial angle
+
+I := 1
+WHILE I <= N DO
+  PUSHSTATE
+
+  LEFT THETA
+  PENUP
+  FORWARD RAD
+  PENDOWN
+  J := 1
+  WHILE J <= 5 DO
+    FORWARD L
+    RIGHT 720 / 5
+    J := J+1
+  OD
+
+  POPSTATE
+  THETA := THETA + DTHETA
+  I := I+1
+OD
+
+

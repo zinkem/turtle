@@ -1,0 +1,11 @@
+N := 5             # number of sides
+L := 10            # length of a side
+THETA := 360 / N   # internal angle
+PENDOWN
+I := 1
+WHILE I <= N DO
+  FORWARD L
+  LEFT THETA
+  I := I + 1
+OD
+PENUP 
